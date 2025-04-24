@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <header>
+        <h1>Welcome to My HTML5 Practice Page</h1>
+    </header>
+
+    <section>
+        <h2>Roman Numeral List</h2>
+        <ol type="I">
+            <li>Introduction to HTML5</li>
+            <li>Learning CSS</li>
+            <li>JavaScript Basics</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Beautiful Nature</h2>
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Nature Landscape"
+            width="500" />
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>123 Maple Street</td>
+                    <td>123-456-7890</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>456 Oak Avenue</td>
+                    <td>987-654-3210</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Lisa Brown</td>
+                    <td>789 Pine Road</td>
+                    <td>555-666-7777</td>
+                    <td>lisa@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mark Lee</td>
+                    <td>101 Elm Blvd</td>
+                    <td>333-222-1111</td>
+                    <td>mark@example.com</td>
+                </tr>
+                <tr>
+                    <td>Anna White</td>
+                    <td>202 Birch Lane</td>
+                    <td>444-555-6666</td>
+                    <td>anna@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Name Input -->
+            <label for="name">Full Name:</label><br />
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br /><br />
+
+            <!-- Email Input -->
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" placeholder="Enter your email" required /><br /><br />
+
+            <!-- Password Input -->
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" placeholder="Create a password" required
+                minlength="6" /><br /><br />
+
+            <!-- Date Input -->
+            <label for="dob">Date of Birth:</label><br />
+            <input type="date" id="dob" name="dob" required /><br /><br />
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label><br />
+            <select id="country" name="country" required>
+                <option value="">Select</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+            </select><br /><br />
+
+            <!-- Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label><br /><br />
+
+            <!-- Checkboxes -->
+            <p>Interests:</p>
+            <input type="checkbox" id="html" name="interest" value="html" />
+            <label for="html">HTML</label><br />
+            <input type="checkbox" id="css" name="interest" value="css" />
+            <label for="css">CSS</label><br />
+            <input type="checkbox" id="js" name="interest" value="js" />
+            <label for="js">JavaScript</label><br /><br />
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register" />
+        </form>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section>
+        <h2>Multimedia Elements</h2>
+
+        <!-- Audio -->
+        <h3>Audio Sample</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video -->
+        <h3>Video Sample</h3>
+        <video width="480" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 HTML5 Practice Page. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
