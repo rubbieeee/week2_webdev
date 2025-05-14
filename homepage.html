@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class=" container">
+        <aside>
+            <div class="top" id="name">
+                <h2>WorldWide Cash</h2>
+                <div class="close" id="closebtn">
+                    <i class="fas fa-xmark"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li> <a href="#" class="sidebar-link" id="dashboardLink"> <i class="fas fa-qrcode"></i>
+                            Dashboard</a></li>
+                    <li> <a href="#" class="sidebar-link" id="showMemberForm"> <i class="fa-solid fa-users"></i>
+                            Members</a></li>
+                    <li> <a href="#" class="sidebar-link" id="loansActiveLink"> <i class="fa-solid fa-coins"></i>Loans
+                            Active</a></li>
+                    <li> <a href="#" class="sidebar-link" id="loansApplicationsLink"> <i class="fa-solid fa-coins"></i>
+                            Loans Applications</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <div class="signoutbtn">
+        <a href="signuppage.html">
+            <button class="signout" id="logout">Logout</button></a>
+    </div>
+
+    <div class="menupage">
+        <div class="sidebar-content" id="dashboardContent" style="display: none;">
+            <h3>Dashboard</h3>
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1 id="totalLoans">0</h1>
+                        <h3>Total Loans</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1 id="loanApplications">0</h1>
+                        <h3>Loans Applications</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1 id="activeLoans">0</h1>
+                        <h3>Loans Active<h3>
+                    </div>
+                </div>
+            </div>
+            <div class="add members">
+                <div class="Members">
+                    <div class="card">
+                        <div class="box">
+                            <h1 id="totalMembers">0</h1>
+                            <h3>Members</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-content" id="memberform" style="display: none;">
+            <form class="addMember">
+                <h3>Add Member</h3>
+                <div class="formGroup">
+                    <label for="First Name">First Name</label><br>
+                    <input type="text" id="First Name"><br>
+                    <label for="Middle Name">Middle Name</label><br>
+                    <input type="text" id="Middle Name"><br>
+                    <label for="Last Name">Last Name</label><br>
+                    <input type="text" id="Last Name"><br>
+                    <label for="Date">Date of Birth</label><br>
+                    <input type="date" id="Date"><br>
+                    <label for=Phone> Phone Number</label><br>
+                    <input type="text" id="Phone"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email"><br>
+                    <label for="country">Nationality</label><br>
+                    <input type="text" id="country"><br>
+                    <label for="home">County</label><br>
+                    <input type="text" id="home"><br>
+                    <label for="town">City / Town</label><br>
+                    <input type="text" id="town">
+                </div>
+                <div class="btn-container">
+                    <button class="btnContainer" id="close">Close</button><br>
+                    <button class="btnContainer" id="save">Save</button>
+                </div>
+            </form>
+        </div>
+        <div class="sidebar-content" id="loansActiveTable" style="display: none;">
+            <div class=" tableActive">
+                <table id="activetable">
+                    <tr>
+                        <th>Officer Name</th>
+                        <th>Member</th>
+                        <th>Loan Type</th>
+                        <th>Amount</th>
+                        <th>Interest rate</th>
+                        <th>Loan period</th>
+                    </tr>
+                    <tr>
+                        <td>Ruth</td>
+                        <td>Joan</td>
+                        <td>Business Loan</td>
+                        <td>10000</td>
+                        <td>10%</td>
+                        <td>3 weeks</td>
+                    </tr>
+                </table>
+                <button id="addRow">Add Row</button>
+
+            </div>
+        </div>
+        <div class="sidebar-content" id="loansApplicationsTable" style="display: none;">
+            <div class="table-loan">
+                <table id="applicationsTable">
+                    <tr>
+                        <th>Date</th>
+                        <th>Officer</th>
+                        <th>Member</th>
+                        <th>Loan type</th>
+                        <th>Amount applied</th>
+                        <th>Interest rate</th>
+                        <th>Repayment period</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="date" id="application-date" name="application_date" class="application-date">
+                        </td>
+                        <td><input type="text" id="officer-name" name="officer_name" class="officer-name"></td>
+                        <td><input type="text" id="member-name" name="member_name" class="member-name"></td>
+                        <td><input type="text" id="loan-type" name="loan_type" class="loan-type"></td>
+                        <td><input type="number" id="amount-applied" name="amount_applied" class="amount-applied"></td>
+                        <td><input type="number" id="interest-rate" name="interest_rate" class="interest-rate"></td>
+                        <td><input type="text" id="repayment-period" name="repayment_period" class="repayment-period">
+                        </td>
+                        <td><button class="submit-btn">Submit</button></td>
+                    </tr>
+                </table>
+                <button id="addRowButton">Add Row</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="homepage.js"></script>
+
+</body>
+
+</html>
